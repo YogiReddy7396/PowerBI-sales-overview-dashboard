@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This project is an interactive Power BI dashboard designed to analyze sales performance across multiple dimensions such as country, category, customer, and time. It helps in identifying trends, evaluating performance, and supporting data-driven decision-making.
+This project is an interactive Power BI dashboard designed to analyze sales performance across different dimensions such as country, category, customer, and time. It helps in identifying trends and making data-driven decisions.
 
 ---
 
@@ -10,8 +10,8 @@ This project is an interactive Power BI dashboard designed to analyze sales perf
 
 * Analyze overall sales and order performance
 * Identify trends over time
-* Compare performance across countries and categories
-* Identify top and bottom performing products
+* Compare performance across regions and categories
+* Identify top and bottom performing products and customers
 
 ---
 
@@ -25,33 +25,53 @@ This project is an interactive Power BI dashboard designed to analyze sales perf
 
 ## 📊 Dashboard Pages
 
-### 🔹 1. Sales Overview
+### 🔹 1. Sales Overview (Net Sales View)
 
 * KPIs: Net Sales, Total Orders, Total Customers
-* Sales distribution by country (Tree Map)
-* Sales trend over time (Line Chart)
-* Top customers by sales
-* Category-wise sales analysis
-* Interactive filters: Country, City, Category, Date
+* Sales trend and country-wise analysis
+* Category-wise performance
+* Interactive filters
+
+👉 **Navigation Feature:**
+
+* A button **“Show in Orders”** is provided
+* Clicking it redirects to the **Orders Dashboard (Sheet 2)**
 
 ---
 
-### 🔹 2. Sales Overview (Orders)
+### 🔹 2. Sales Overview (Orders View)
 
-* KPIs focused on order metrics
-* Orders distribution by country
+* Order-based KPIs and analysis
 * Order trends over time
-* Top customers by total orders
-* Category-wise order analysis
+* Customer and category insights
+
+👉 **Navigation Feature:**
+
+* A button **“Show in Net Sales”** is provided
+* Clicking it redirects back to the **Net Sales Dashboard (Sheet 1)**
 
 ---
 
-### 🔹 3. Top/Bottom Products
+### 🔹 3. Top/Bottom Analysis
 
-* Top 10 products by Net Sales
-* Top 10 products by Orders
-* Bottom 10 products analysis
-* Identifies high and low performing products
+This page provides a comparative analysis of best and worst performers based on both **Net Sales** and **Total Orders**, with dynamic switching between Product and Customer perspectives.
+
+#### ✅ Product View
+
+* Displays **Top 10 products by Net Sales and Orders**
+* Shows **Bottom 10 products** to identify low-performing items
+* Useful for product performance evaluation
+
+#### ✅ Customer View
+
+* Displays **Top 10 customers by Net Sales and Orders**
+* Shows **Bottom 10 customers** to identify low-engagement customers
+* Useful for customer analysis and segmentation
+
+👉 **Toggle Feature:**
+
+* Buttons **“Product View”** and **“Customer View”** are provided
+* Clicking them switches between product and customer analysis
 
 ---
 
@@ -59,17 +79,18 @@ This project is an interactive Power BI dashboard designed to analyze sales perf
 
 * Interactive slicers (Country, City, Category, Date)
 * Dynamic KPI cards
-* Multi-page dashboard navigation
-* Comparative and trend analysis
+* Page navigation buttons (Net Sales ↔ Orders)
+* Toggle-based dynamic view (Product vs Customer)
+* **Synchronized filters across all pages**
 
 ---
 
 ## 📈 Key Insights
 
-* Top-performing countries and customers identified
-* Sales and order trends observed over time
-* High and low performing products highlighted
-* Comparison between sales and order behavior
+* Identified top-performing countries, customers, and products
+* Observed trends in sales and orders over time
+* Highlighted best and worst performing entities
+* Compared product vs customer performance
 
 ---
 
@@ -83,36 +104,38 @@ This project is an interactive Power BI dashboard designed to analyze sales perf
 
 ### 🔹 Sales Overview
 
-This page provides a high-level view of overall sales performance, including KPIs, sales trends, and regional distribution.
 ![Sales Overview](sales-overview.png)
 
 ---
 
 ### 🔹 Orders Overview
 
-This page focuses on order-based analysis, helping to understand order volume trends and customer behavior.
 ![Orders Overview](orders-overview.png)
 
 ---
 
-### 🔹 Top/Bottom Products
+### 🔹 Product View
 
-This page highlights the best and worst performing products based on sales and orders.
-![Top Bottom Products](top-bottom.png)
+![Product View](product-view.png)
+
+---
+
+### 🔹 Customer View
+
+![Customer View](customer-view.png)
 
 ---
 
 ## 🚀 Purpose
 
-This project was created to practice Power BI dashboard development and to demonstrate the ability to convert raw data into meaningful business insights.
+This project was created to practice Power BI and to understand how business data can be visualized effectively.
 
 ---
 
 ## 🔮 Future Improvements
 
 * Add advanced DAX measures
-* Improve UI/UX design
-* Add drill-through functionality
+* Improve dashboard design
 * Enhance interactivity
 
 ---
